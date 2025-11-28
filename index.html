@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>William John Lopez, Realtor </title>
+  <title>William John Lopez, Realtor – South Miami Homes up to $800K</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO DESCRIPTION -->
@@ -13,7 +13,9 @@
   <meta property="og:description" content="View updated and renovated single-family homes in South Miami priced up to $800,000.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://willmyster1.github.io/South-Miami-Homes-to-800K/">
-  <meta property="og:image" content="https://willmyster1.github.io/South-Miami-Homes-to-800K/wjl-logo-new.png">
+
+  <!-- PREVIEW IMAGE -->
+  <meta property="og:image" content="https://willmyster1.github.io/South-Miami-Homes-to-800K/images/preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -22,90 +24,58 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f3f3f3;
-      color: #071d49;
       text-align: center;
     }
 
-    /* TOP HEADER AREA */
-    .header {
-      padding: 20px 10px;
-      background-color: #ffffff;
-      border-bottom: 2px solid #071d49;
+    /* Top logo */
+    .logo-container img {
+      width: 160px;
+      margin-top: 30px;
     }
 
-    .header img {
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 12px;
-    }
-
-    /* NAME + CONTACT (styled to feel like the logo font) */
-    .name {
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-top: 4px;
-    }
-
-    .title {
-      font-size: 16px;
-      letter-spacing: 3px;
-      margin-top: 2px;
-      margin-bottom: 10px;
-    }
-
-    .contact {
-      font-size: 15px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
-
-    .contact a {
-      color: #071d49;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    .subheading {
-      font-size: 17px;
-      font-weight: bold;
+    /* Name + contact block */
+    .contact-block {
       margin-top: 10px;
+      font-size: 20px;
+      color: #071d49;
+      font-weight: bold;
     }
 
-    /* IFRAME SECTION */
+    .contact-block small {
+      display: block;
+      margin-top: 6px;
+      font-size: 15px;
+      font-weight: normal;
+      color: #333;
+    }
+
+    /* Iframe */
     iframe {
       width: 100%;
       height: calc(100vh - 260px);
       border: none;
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER SECTION -->
-  <div class="header">
-    <!-- transparent logo at the very top -->
-    <img src="wjl-logo-new.png" alt="WJL Logo">
-
-    <!-- name + title + contact, centered -->
-    <div class="name">WILLIAM JOHN LOPEZ</div>
-    <div class="title">REALTOR</div>
-
-    <div class="contact">
-      (305) 934-0416 &nbsp; | &nbsp;
-      <a href="mailto:will@gps-realestate.com">will@gps-realestate.com</a>
-    </div>
-
-    <div class="subheading">
-      South Miami Homes up to $800K
-    </div>
+  <!-- TOP LOGO -->
+  <div class="logo-container">
+    <img src="https://willmyster1.github.io/South-Miami-Homes-to-800K/wjl-logo-new.png" alt="WJL Logo">
   </div>
 
-  <!-- IFRAME CONTENT (YOUR NETLIFY LISTINGS) -->
+  <!-- NAME + CONTACT -->
+  <div class="contact-block">
+    WILLIAM JOHN LOPEZ<br>
+    REALTOR
+    <small>
+      (305) 934-0416 | will@gps-realestate.com
+    </small>
+  </div>
+
+  <!-- PROPERTY LISTING IFRAME -->
   <iframe 
     src="https://resilient-travesseiro-da3b34.netlify.app/south%20miami%20up%20800k"
     title="South Miami Homes Listing">
@@ -113,4 +83,3 @@
 
 </body>
 </html>
-
